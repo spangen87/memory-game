@@ -1,0 +1,13 @@
+body {
+    background: #f8faf9;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #937862;
+    font-family: 'Courgette', cursive;
+    font-size: 48px;
+    margin: 0 auto;
+    text-align: center;
+}
