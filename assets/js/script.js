@@ -19,4 +19,8 @@ let cardList = [
     {name: 'unicorn', img: 'assets/images/unicorn.png'},
 ];
 
-console.log(cardList);
+// Getting elments from the DOM 
+let CardArea = document.getElementsByClassName('card-area');
+let score = document.getElementById('attempts')[0];
+let newGame = document.getElementsByClassName('new-game')
+
