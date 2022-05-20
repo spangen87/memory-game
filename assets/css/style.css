@@ -1,13 +1,24 @@
 body {
     background: #f8faf9;
+    color:#937862;
     font-family: 'Varela Round', sans-serif;
     text-align: center;
 }
 
 h1 {
-    color: #937862;
+    color:#e497a6;
     font-family: 'Courgette', cursive;
     font-size: 48px;
-    margin: 0 auto;
     text-align: center;
+}
+
+.new-game {
+    background-color: #e497a6;
+    color: #f8faf9;
+    font-family: 'Varela Round', sans-serif;
+    font-size: large;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: #a9c4bc;
 }
