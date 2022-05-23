@@ -24,10 +24,14 @@ h1 {
 }
 
 .card-area {
-    width: 90%; 
-    height: 2000px;
-    width: 2000px; 
+    width: 600px; 
+    height: 600px; 
     display: flex; 
     flex-wrap: wrap; 
     margin: 60px auto; 
+}
+
+img {
+    width: 25%;
+    height: 25%;
 }

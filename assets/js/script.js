@@ -27,7 +27,8 @@ let cardList = [
 let cardArea = document.querySelector('.card-area');
 
 document.addEventListener('DOMContentLoaded', function() {
-// Setting up the board
+    
+// Setting up the board with the cards
 function setBoard() {
     for (let i = 0; i < cardList.length; i++) {
         let card = document.createElement('img');
