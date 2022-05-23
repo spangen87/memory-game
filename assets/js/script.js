@@ -1,7 +1,4 @@
-
-
 // Array of all the cards
-
 let cardList = [
     {name: 'bear', img: 'assets/images/bear.png'},
     {name: 'dinosarie', img: 'assets/images/dinosarie.png'},
@@ -31,25 +28,46 @@ let cardsId = [];
 document.addEventListener('DOMContentLoaded', function() {
     
 // Setting up the board with the cards
-function setBoard() {
+    function setBoard() {
     for (let i = 0; i < cardList.length; i++) {
         let card = document.createElement('img');
         card.setAttribute('src', 'assets/images/blank.png');
         card.setAttribute('data-id', i);
-        card.addEventListener('click', turnCard)
+        card.addEventListener('click', turnCard);
         cardArea.appendChild(card);
+     };
     };
-};
 
-setBoard();
+    setBoard();
+
+//Check for pairs
+    function CheckForPairs() {
+        let cards = document.querySelectorAll('img');
+        let cardOne = cardsId[0];
+        let cardTwo = cardsId[1];
+        if (cardsChosen[0] === cardsChosen[1]) {
+            alert('Correct!')
+        } else {
+            cards[cardOne].setAttribute('src', 'assets/images/blank.png');
+            cards[cardTwo].setAttribute('src', 'assets/images/blank.png');
+        }
+
+        cardsChosen = [];
+        cardsId = [];
+    }    
 
 // Turning the cards
-function turnCard() {
-    let id = this.getAttribute('data-id');
-    cardsChosen.push(cardList[id].name)
-    cardsId.push(id);
-    this.setAttribute('src', cardList[id].img);
-}
+    function turnCard() {
+        let id = this.getAttribute('data-id');
+        cardsChosen.push(cardList[id].name);
+        cardsId.push(id);
+        this.setAttribute('src', cardList[id].img);
+        if (cardsChosen.length === 2) {
+            setTimeout(CheckForPairs, 600);
+        }
+    }
 
-})
+
+
+});
 
