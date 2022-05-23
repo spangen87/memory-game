@@ -77,15 +77,6 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(CheckForPairs, 1000);
         }
     }
-
-// Score
-    function setScore() {
-        if (won.length === 8) {
-            alert('Congratulations! You completed the game.:)')
-        }
-    }
     
-    setScore();
-
 });
 

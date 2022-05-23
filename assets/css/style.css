@@ -35,3 +35,11 @@ img {
     width: 25%;
     height: 25%;
 }
+
+/* Media querie for screens smaller than 700px */
+@media screen and (max-width: 700px) {
+    .card-area {
+        width: 90%;
+        height: auto;
+    }
+}
