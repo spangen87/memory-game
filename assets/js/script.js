@@ -25,6 +25,8 @@ let cardList = [
 
 // Getting elments from the DOM 
 let cardArea = document.querySelector('.card-area');
+let cardsChosen = [];
+let cardsId = [];
 
 document.addEventListener('DOMContentLoaded', function() {
     
@@ -34,11 +36,20 @@ function setBoard() {
         let card = document.createElement('img');
         card.setAttribute('src', 'assets/images/blank.png');
         card.setAttribute('data-id', i);
+        card.addEventListener('click', turnCard)
         cardArea.appendChild(card);
     };
 };
 
 setBoard();
+
+// Turning the cards
+function turnCard() {
+    let id = this.getAttribute('data-id');
+    cardsChosen.push(cardList[id].name)
+    cardsId.push(id);
+    this.setAttribute('src', cardList[id].img);
+}
 
 })
 
