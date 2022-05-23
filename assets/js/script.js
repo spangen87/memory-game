@@ -1,3 +1,5 @@
+
+
 // Array of all the cards
 
 let cardList = [
@@ -19,8 +21,23 @@ let cardList = [
     {name: 'unicorn', img: 'assets/images/unicorn.png'},
 ];
 
+
+
 // Getting elments from the DOM 
-let CardArea = document.getElementsByClassName('card-area');
-let score = document.getElementById('attempts')[0];
-let newGame = document.getElementsByClassName('new-game')
+let cardArea = document.querySelector('.card-area');
+
+document.addEventListener('DOMContentLoaded', function() {
+// Setting up the board
+function setBoard() {
+    for (let i = 0; i < cardList.length; i++) {
+        let card = document.createElement('img');
+        card.setAttribute('src', 'assets/images/blank.png');
+        card.setAttribute('data-id', i);
+        cardArea.appendChild(card);
+    };
+};
+
+setBoard();
+
+})
 

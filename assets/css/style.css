@@ -22,3 +22,12 @@ h1 {
     border-radius: 10px;
     border-color: #a9c4bc;
 }
+
+.card-area {
+    width: 90%; 
+    height: 2000px;
+    width: 2000px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    margin: 60px auto; 
+}
