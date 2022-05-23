@@ -19,13 +19,19 @@ let cardList = [
 ];
 
 
-
 // Getting elments from the DOM 
 let cardArea = document.querySelector('.card-area');
 let cardsChosen = [];
 let cardsId = [];
 
 document.addEventListener('DOMContentLoaded', function() {
+
+// Randomize the cards. Credits for solution: https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j
+    function randomCards() {
+        cardList.sort(() => 0.5 - Math.random());
+    }
+
+    randomCards();
     
 // Setting up the board with the cards
     function setBoard() {
@@ -39,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     setBoard();
+
 
 //Check for pairs
     function CheckForPairs() {
@@ -66,8 +73,6 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(CheckForPairs, 600);
         }
     }
-
-
 
 });
 
