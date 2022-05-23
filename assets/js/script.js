@@ -23,6 +23,7 @@ let cardList = [
 let cardArea = document.querySelector('.card-area');
 let cardsChosen = [];
 let cardsId = [];
+let won = [];
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -53,10 +54,13 @@ document.addEventListener('DOMContentLoaded', function() {
         let cardOne = cardsId[0];
         let cardTwo = cardsId[1];
         if (cardsChosen[0] === cardsChosen[1]) {
-            alert('Correct!')
+            won.push(1);
         } else {
             cards[cardOne].setAttribute('src', 'assets/images/blank.png');
             cards[cardTwo].setAttribute('src', 'assets/images/blank.png');
+        }
+        if (won.length === 8) {
+            alert('Congratulations! You completed the game. :D')
         }
 
         cardsChosen = [];
@@ -70,9 +74,18 @@ document.addEventListener('DOMContentLoaded', function() {
         cardsId.push(id);
         this.setAttribute('src', cardList[id].img);
         if (cardsChosen.length === 2) {
-            setTimeout(CheckForPairs, 600);
+            setTimeout(CheckForPairs, 1000);
         }
     }
+
+// Score
+    function setScore() {
+        if (won.length === 8) {
+            alert('Congratulations! You completed the game.:)')
+        }
+    }
+    
+    setScore();
 
 });
 
