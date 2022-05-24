@@ -35,8 +35,13 @@ img {
     width: 24%;
     height: 24%;
     margin: 1px 1px;
-    border-style: none;
-    box-shadow: #e497a6;
+    transform-style: preserve-3d; 
+    transition: transform 0.5s;
+    border-radius: 10px;
+}
+
+img.turn {
+    transform: rotateY(180deg);
 }
 
 /* Media querie for screens smaller than 700px */

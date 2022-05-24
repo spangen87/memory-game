@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         card = document.createElement('img');
         card.setAttribute('src', 'assets/images/blank.png');
         card.setAttribute('data-id', i);
-        card.addEventListener('click', turnCard);
+        card.addEventListener('click', turnCard, true);
         cardArea.appendChild(card);
      };
     };
@@ -73,9 +73,10 @@ document.addEventListener('DOMContentLoaded', function() {
         let id = this.getAttribute('data-id');
         cardsChosen.push(cardList[id].name);
         cardsId.push(id);
+        this.classList.add('turn');
         this.setAttribute('src', cardList[id].img);
         if (cardsChosen.length === 2) {
-            setTimeout(CheckForPairs, 500);
+            setTimeout(CheckForPairs, 500);        
         }
     }
     
