@@ -24,16 +24,19 @@ h1 {
 }
 
 .card-area {
-    width: 600px; 
-    height: 600px; 
+    width: 608px; 
+    height: 608px; 
     display: flex; 
     flex-wrap: wrap; 
-    margin: 60px auto; 
+    margin: 0 auto;
 }
 
 img {
-    width: 25%;
-    height: 25%;
+    width: 24%;
+    height: 24%;
+    margin: 1px 1px;
+    border-style: none;
+    box-shadow: #e497a6;
 }
 
 /* Media querie for screens smaller than 700px */

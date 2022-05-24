@@ -24,6 +24,7 @@ let cardArea = document.querySelector('.card-area');
 let cardsChosen = [];
 let cardsId = [];
 let won = [];
+let card;
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -37,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Setting up the board with the cards
     function setBoard() {
     for (let i = 0; i < cardList.length; i++) {
-        let card = document.createElement('img');
+        card = document.createElement('img');
         card.setAttribute('src', 'assets/images/blank.png');
         card.setAttribute('data-id', i);
         card.addEventListener('click', turnCard);
@@ -74,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
         cardsId.push(id);
         this.setAttribute('src', cardList[id].img);
         if (cardsChosen.length === 2) {
-            setTimeout(CheckForPairs, 1000);
+            setTimeout(CheckForPairs, 500);
         }
     }
     
