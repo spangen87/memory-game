@@ -16,7 +16,7 @@ The wireframes was made before the project started to guide the design. Some cha
 ## Testing
 
 ## Bugs
-
+Card animation will only work first time it is clicked.
 ## Deployment
 
 ## Credits

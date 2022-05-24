@@ -70,15 +70,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Turning the cards
     function turnCard() {
-        let id = this.getAttribute('data-id');
+        let id = this.getAttribute('data-id');     
         cardsChosen.push(cardList[id].name);
         cardsId.push(id);
         this.classList.add('turn');
         this.setAttribute('src', cardList[id].img);
         if (cardsChosen.length === 2) {
-            setTimeout(CheckForPairs, 500);        
+            setTimeout(CheckForPairs, 500);       
         }
+        
     }
+
+// Setting attempts    
+    let callCount = 0;
+
+    callCount += 1;
+
+    let attempts = document.getElementById('attempts');
+    attempts.innerHTML = (callCount);
     
 });
 
