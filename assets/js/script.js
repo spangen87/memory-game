@@ -67,6 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (won.length === 8) {
             alert(`Congratulations! You completed the game. :D \nYou finished in ${callCount} attempts!`)
         }
+
+// Counts the attempts and displays it in the HTML
         callCount++;
         let attempts = document.getElementById('attempts');
         attempts.innerHTML = (callCount);
@@ -89,9 +91,6 @@ document.addEventListener('DOMContentLoaded', function() {
             clickLock = true;
         }   
     }
-
-// Setting attempts    
-
     
 });
 
