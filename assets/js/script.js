@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
             cards[cardOne].classList.remove('turn');
         }
         if (won.length === 8) {
-            alert(`Congratulations! You completed the game. :D \nYou finished in ${callCount} attempts!`)
+            alert(`Congratulations! You completed the game. :D \nYou finished in ${callCount} attempts and made it in ${time} seconds!`)
         }
 
 // Counts the attempts and displays it in the HTML
