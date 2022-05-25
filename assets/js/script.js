@@ -59,6 +59,8 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             cards[cardOne].setAttribute('src', 'assets/images/blank.png');
             cards[cardTwo].setAttribute('src', 'assets/images/blank.png');
+            cards[cardTwo].classList.remove('turn');
+            cards[cardOne].classList.remove('turn');
         }
         if (won.length === 8) {
             alert('Congratulations! You completed the game. :D')
