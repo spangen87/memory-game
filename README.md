@@ -16,7 +16,9 @@ The wireframes was made before the project started to guide the design. Some cha
 ## Testing
 
 ## Bugs
-Card animation will only work first time it is clicked.
+Card animation will only work first time it is clicked. The bug was fixed by adding a remove class of the flipped cards in the function that check for pairs.
+
+If you clicked more than two cards before they flipped back, it resulted in a error. The bug was fixed by adding a lock to the board while the timeout was running.
 ## Deployment
 
 ## Credits
