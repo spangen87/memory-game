@@ -25,6 +25,8 @@ let cardsChosen = [];
 let cardsId = [];
 let won = [];
 let card;
+let callCount = 0;
+let clickLock = false;
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -63,33 +65,33 @@ document.addEventListener('DOMContentLoaded', function() {
             cards[cardOne].classList.remove('turn');
         }
         if (won.length === 8) {
-            alert('Congratulations! You completed the game. :D')
+            alert(`Congratulations! You completed the game. :D \nYou finished in ${callCount} attempts!`)
         }
-
+        callCount++;
+        let attempts = document.getElementById('attempts');
+        attempts.innerHTML = (callCount);
         cardsChosen = [];
         cardsId = [];
+        clickLock = false;
     }    
 
 // Turning the cards
     function turnCard() {
+        if (clickLock)
+            return;
         let id = this.getAttribute('data-id');     
         cardsChosen.push(cardList[id].name);
         cardsId.push(id);
         this.classList.add('turn');
         this.setAttribute('src', cardList[id].img);
         if (cardsChosen.length === 2) {
-            setTimeout(CheckForPairs, 500);       
-        }
-        
+            setTimeout(CheckForPairs, 700);
+            clickLock = true;
+        }   
     }
 
 // Setting attempts    
-    let callCount = 0;
 
-    callCount += 1;
-
-    let attempts = document.getElementById('attempts');
-    attempts.innerHTML = (callCount);
     
 });
 
