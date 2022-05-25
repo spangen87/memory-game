@@ -91,6 +91,14 @@ document.addEventListener('DOMContentLoaded', function() {
             clickLock = true;
         }   
     }
+
+// Keeping time function
+    function keepTime() {
+        let time = document.getElementById('seconds');
+        setInterval(function() {time.innerHTML ++}, 1000);
+    }   
+    
+    keepTime();
     
 });
 
