@@ -24,9 +24,9 @@ let cardArea = document.querySelector('.card-area');
 let cardsChosen = [];
 let cardsId = [];
 let won = [];
-let card;
 let callCount = 0;
 let clickLock = false;
+let time = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Setting up the board with the cards
     function setBoard() {
     for (let i = 0; i < cardList.length; i++) {
-        card = document.createElement('img');
+        let card = document.createElement('img');
         card.setAttribute('src', 'assets/images/blank.png');
         card.setAttribute('data-id', i);
         card.addEventListener('click', turnCard, true);
@@ -75,7 +75,8 @@ document.addEventListener('DOMContentLoaded', function() {
         cardsChosen = [];
         cardsId = [];
         clickLock = false;
-    }    
+    } 
+    
 
 // Turning the cards
     function turnCard() {
@@ -85,7 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
         cardsChosen.push(cardList[id].name);
         cardsId.push(id);
         this.classList.add('turn');
-        this.setAttribute('src', cardList[id].img);
+     //  Credits to Ludde Hedlund for help with delaying the card change
+        setTimeout(() => {this.setAttribute('src', cardList[id].img)}, 200);
         if (cardsChosen.length === 2) {
             setTimeout(CheckForPairs, 700);
             clickLock = true;
@@ -94,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Keeping time function
     function keepTime() {
-        let time = document.getElementById('seconds');
+        time = document.getElementById('seconds');
         setInterval(function() {time.innerHTML ++}, 1000);
     }   
     
