@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         if (won.length === 8) {
             alert(`Congratulations! You completed the game. :D \nYou finished in ${callCount} attempts and made it in ${time} seconds!`)
+            reset();
         }
 
 // Counts the attempts and displays it in the HTML
