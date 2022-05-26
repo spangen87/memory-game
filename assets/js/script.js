@@ -91,16 +91,29 @@ document.addEventListener('DOMContentLoaded', function() {
         if (cardsChosen.length === 2) {
             setTimeout(CheckForPairs, 700);
             clickLock = true;
-        }   
+        }
     }
 
 // Keeping time function
-    function keepTime() {
-        time = document.getElementById('seconds');
-        setInterval(function() {time.innerHTML ++}, 1000);
+function keepTime() {
+    time = document.getElementById('seconds');
+    setInterval(function() {time.innerHTML ++}, 1000);
+}
+    keepTime();
+
+// Function for resetting the game
+    function reset() {
+    cardArea.innerHTML = "";    
+    cardsChosen = [];
+    cardsId = [];
+    won = [];
+    callCount = 0;
+    time = 0;
+    randomCards();    
+    setBoard();
     }   
     
-    keepTime();
+document.getElementById('btn').addEventListener('click', reset);
     
 });
 
