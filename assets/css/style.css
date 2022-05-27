@@ -50,6 +50,16 @@ a {
     color: #e497a6;
 }
 
+#start-image {
+    width: 300px;
+    height: 300px;
+    display: flex; 
+    flex-wrap: wrap; 
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
 /* Media querie for screens smaller than 700px */
 @media screen and (max-width: 700px) {
     .card-area {
