@@ -27,6 +27,8 @@ let won = [];
 let callCount = 0;
 let clickLock = false;
 let time = 0;
+let attempts = document.getElementById('attempts');
+let reload = document.querySelector('#btn');
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -65,13 +67,13 @@ document.addEventListener('DOMContentLoaded', function() {
             cards[cardOne].classList.remove('turn');
         }
         if (won.length === 8) {
-            alert(`Congratulations! You completed the game. :D \nYou finished in ${callCount} attempts and made it in ${time} seconds!`)
+            alert(`Congratulations! You completed the game. :D \nYou finished in ${callCount} attempts and made it in ${time} seconds!`);
             reset();
         }
 
 // Counts the attempts and displays it in the HTML
         callCount++;
-        let attempts = document.getElementById('attempts');
+     //   let attempts = document.getElementById('attempts');
         attempts.innerHTML = (callCount);
         cardsChosen = [];
         cardsId = [];
@@ -104,14 +106,7 @@ function keepTime() {
 
 // Function for resetting the game
     function reset() {
-    cardArea.innerHTML = "";    
-    cardsChosen = [];
-    cardsId = [];
-    won = [];
-    callCount = 0;
-    time = 0;
-    randomCards();    
-    setBoard();
+       reload = location.reload();
     }   
     
 document.getElementById('btn').addEventListener('click', reset);
