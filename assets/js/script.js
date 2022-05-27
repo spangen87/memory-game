@@ -29,6 +29,7 @@ let clickLock = false;
 let time = 0;
 let attempts = document.getElementById('attempts');
 let reload = document.querySelector('#btn');
+let animationInProgress = false;
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -67,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
             cards[cardOne].classList.remove('turn');
         }
         if (won.length === 8) {
-            alert(`Congratulations! You completed the game. :D \nYou finished in ${callCount} attempts and made it in ${time} seconds!`);
+            alert(`Congratulations! You completed the game. :D \nYou finished in ${callCount} attempts and made it in ${time.innerHTML} seconds!`);
             reset();
         }
 
@@ -83,14 +84,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Turning the cards
     function turnCard() {
-        if (clickLock)
+        if (clickLock || this.getAttribute('src') !== 'assets/images/blank.png' || animationInProgress)
             return;
+        animationInProgress = true;    
         let id = this.getAttribute('data-id');     
         cardsChosen.push(cardList[id].name);
         cardsId.push(id);
         this.classList.add('turn');
      //  Credits to Ludde Hedlund for help with delaying the card change
-        setTimeout(() => {this.setAttribute('src', cardList[id].img)}, 200);
+        setTimeout(() => {
+            this.setAttribute('src', cardList[id].img);
+            animationInProgress = false
+        }, 200);
         if (cardsChosen.length === 2) {
             setTimeout(CheckForPairs, 700);
             clickLock = true;
