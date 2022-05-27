@@ -19,6 +19,10 @@ The wireframes was made before the project started to guide the design. Some cha
 Card animation will only work first time it is clicked. The bug was fixed by adding a remove class of the flipped cards in the function that check for pairs.
 
 If you clicked more than two cards before they flipped back, it resulted in a error. The bug was fixed by adding a lock to the board while the timeout was running.
+
+You can click on a card that is already facing up wich will get the count for matches to count wrong. It will also turn an already matched card to the wrong side.
+
+The alert shown when finishing the game is not showing the time used correctly. Instead of the time it shows "[object HTMLSpanElement]".
 ## Deployment
 
 ## Credits
