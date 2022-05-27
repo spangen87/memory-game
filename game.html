@@ -14,12 +14,20 @@
 </head>
 
 <body>
-    <h1 class="heading">
+    <h1 class="heading"><a href="index.html" id="logo">
         Teddy Memory Game
-    </h1>
+    </a></h1>
 
-    <button id="start-game" class="new-game" onclick="window.location.href='game.html';">START GAME</button>
-    <button id="INSTRUCTION" class="new-game" onclick="window.location.href='';">INSTRUCTION</button>
+    <div class="card-area">
+        
+    </div>
+
+    <div class="score-area">
+        <p class="scores">Number of attempts: <span id="attempts">0</span></p>
+        <p class="time">Time passed: <span id="seconds">0</span></p>
+    </div>
+
+    <button id="btn" class="new-game">NEW GAME</button>
 
     <script src="assets/js/script.js"></script>     
 </body>
