@@ -135,9 +135,14 @@ document.addEventListener('DOMContentLoaded', function() {
 document.getElementById('btn').addEventListener('click', reset);
 
 // HTML Modal Credits: https://www.w3schools.com/howto/howto_css_modals.asp
-let modal = document.getElementById("rulesModal");
-let btn = document.getElementById("rulesBtn");
-let span = document.getElementsByClassName("close")[0];
+let modal = document.getElementById('rulesModal');
+let btn = document.getElementById('rulesBtn');
+let span = document.getElementsByClassName('close')[0];
+let close = document.getElementById('close');
+
+close.onclick = function() {
+    modal.style.display = 'none';
+}
 
 btn.onclick = function() {
     modal.style.display = "block";
