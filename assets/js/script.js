@@ -31,7 +31,7 @@ let attempts = document.getElementById('attempts');
 let reload = document.querySelector('#btn');
 let animationInProgress = false;
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {    
 
 // Randomize the cards. Credits for solution: https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j
     function randomCards() {
@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
 // Setting up the board with the cards
     function setBoard() {
+        cardArea.replaceChildren();
     for (let i = 0; i < cardList.length; i++) {
         let card = document.createElement('img');
         card.setAttribute('src', 'assets/images/blank.png');
@@ -115,6 +116,25 @@ function keepTime() {
     }   
     
 document.getElementById('btn').addEventListener('click', reset);
+
+// HTML Modal Credits: https://www.w3schools.com/howto/howto_css_modals.asp
+let modal = document.getElementById("rulesModal");
+let btn = document.getElementById("rulesBtn");
+let span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }  
     
 });
 

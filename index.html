@@ -21,7 +21,21 @@
     <img src="assets/images/bear.png" alt="Card with bear" id="start-image">
 
     <button id="start-game" class="new-game" onclick="window.location.href='game.html';">START GAME</button>
-    <button id="INSTRUCTION" class="new-game" onclick="window.location.href='';">INSTRUCTION</button>
+    <button id="rulesBtn">RULES</button>
+
+    <div id="rulesModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Teddy Memory Game Instructions</h2>
+          <p>The aim for this game is to find matching pairs. Each turn you have two clicks, if you find a pair the cards will stay open,
+               otherwise it will turn back and you can try again. When all pairs are found you have completed the game and will be noticed
+            how many attempts you needed and how long time it took.</p>
+            <p>Have fun and good luck!</p>
+        </div>
+      
+      </div>
 
     <script src="assets/js/script.js"></script>     
 </body>
