@@ -72,17 +72,16 @@ document.addEventListener('DOMContentLoaded', function() {
             cards[cardTwo].classList.remove('turn');
             cards[cardOne].classList.remove('turn');
         }
+        // Counts the attempts and displays it in the HTML
+        callCount++;
+        attempts.innerHTML = (callCount); 
+        cardsChosen = [];
+        cardsId = [];
+        clickLock = false;
         if (won.length === 8) {
             alert(`Congratulations! You completed the game. :D \nYou finished in ${callCount} attempts and made it in ${time.innerHTML} seconds!`);
             reset();
         }
-
-// Counts the attempts and displays it in the HTML
-        callCount++;
-        attempts.innerHTML = (callCount);
-        cardsChosen = [];
-        cardsId = [];
-        clickLock = false;
     } 
     
 
@@ -129,6 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
         callCount = 0;
         attempts.innerHTML = callCount;
         time.innerHTML = 0;
+        won = [];
     }   
     
 document.getElementById('btn').addEventListener('click', reset);
