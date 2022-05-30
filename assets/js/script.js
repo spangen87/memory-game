@@ -31,7 +31,9 @@ let attempts = document.getElementById('attempts');
 let reload = document.querySelector('#btn');
 let animationInProgress = false;
 
-document.addEventListener('DOMContentLoaded', function() {    
+document.addEventListener('DOMContentLoaded', function() {
+    cardArea.style.display = 'none';
+});    
 
 // Randomize the cards. Credits for solution: https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j
     function randomCards() {
@@ -52,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
      };
     };
 
-    setBoard();
+   // setBoard();
 
 
 //Check for pairs
@@ -103,16 +105,29 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+// Hide menu div when game starts
+    function hideMenu () {
+        let menuDiv = document.getElementById('menu');
+        menuDiv.style.display = 'none';
+    }    
+
 // Keeping time function
-function keepTime() {
-    time = document.getElementById('seconds');
-    setInterval(function() {time.innerHTML ++}, 1000);
-}
-    keepTime();
+//    function keepTime() {
+//        time = document.getElementById('seconds');
+//        setInterval(function() {time.innerHTML ++}, 1000);
+//    }
+ //   keepTime();
 
 // Function for resetting the game
     function reset() {
-       reload = location.reload();
+       //reload = location.reload();
+        hideMenu();
+        cardArea.style.display = 'flex';
+        randomCards();
+        reload = setBoard();
+        callCount = 0;
+        time = document.getElementById('seconds');
+        setInterval(function() {time.innerHTML ++}, 1000);
     }   
     
 document.getElementById('btn').addEventListener('click', reset);
@@ -136,5 +151,5 @@ btn.onclick = function() {
     }
   }  
     
-});
+//});
 
