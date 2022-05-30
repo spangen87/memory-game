@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (won.length === 8) {
             //alert(`Congratulations! You completed the game. :D \nYou finished in ${callCount} attempts and made it in ${time.innerHTML} seconds!`);
             gameFinished();
-            reset();
+           // reset();
         }
     } 
     
@@ -135,21 +135,21 @@ document.addEventListener('DOMContentLoaded', function() {
 document.getElementById('btn').addEventListener('click', reset);
 
 // HTML Modal Credits: https://www.w3schools.com/howto/howto_css_modals.asp
-let rulesModal = document.getElementById("rulesModal");
+let modal = document.getElementById("rulesModal");
 let btn = document.getElementById("rulesBtn");
 let span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
-    rulesModal.style.display = "block";
+    modal.style.display = "block";
   }
 
   span.onclick = function() {
-    rulesModal.style.display = "none";
+    modal.style.display = "none";
   }
   
   window.onclick = function(event) {
-    if (event.target == rulesModal) {
-      rulesModal.style.display = "none";
+    if (event.target == modal) {
+      modal.style.display = "none";
     }
   }  
 
@@ -161,6 +161,7 @@ function gameFinished() {
     document.getElementById('congratulations').innerHTML = 
     `Congratulations! You completed the game. :D \nYou finished in ${callCount} attempts and made it in ${time.innerHTML} seconds!`;
     gameFinishedModal.style.display ='block';
+    scoreArea.style.display = "none";
 }
 
 span.onclick = function() {
