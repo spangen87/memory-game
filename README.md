@@ -5,13 +5,16 @@ The game targets to be a fun and challenging way to learn concentrate and rememb
 
 ## User Experience (UX)
 ### Wireframes
-The wireframes was made before the project started to guide the design. Some changes are made.
+The wireframes was made before the project started to guide the design. Some changes are made to the final version of the game.
 
 ![Wireframe 1](assets/readme-images/index.jpg) ![Wireframe 2](assets/readme-images/alert.jpg)
 
 ## Features
 ### Existing Features
 ### Future Features
+- A feature that could be added is that you can chose a nickname and that the score can be saved. That could add a competitive element to the game if you can compare scores with other users.
+- Adding more levels of difficulty.
+- Adding sound effects to the card flipping animation that can make it come more to life.
 
 ## Technologies Used
 - [HTML](https://html.spec.whatwg.org/) - is setting the structure and the content of the website.
