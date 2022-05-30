@@ -21,6 +21,7 @@ let cardList = [
 
 // Getting elments from the DOM 
 let cardArea = document.querySelector('.card-area');
+let scoreArea = document.querySelector('.score-area');
 let cardsChosen = [];
 let cardsId = [];
 let won = [];
@@ -33,6 +34,7 @@ let animationInProgress = false;
 
 document.addEventListener('DOMContentLoaded', function() {
     cardArea.style.display = 'none';
+    scoreArea.style.display = 'none';
 });    
 
 // Randomize the cards. Credits for solution: https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j
@@ -112,22 +114,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }    
 
 // Keeping time function
-//    function keepTime() {
-//        time = document.getElementById('seconds');
-//        setInterval(function() {time.innerHTML ++}, 1000);
-//    }
- //   keepTime();
+    function keepTime() {
+        time = document.getElementById('seconds');
+        setInterval(function() {time.innerHTML ++}, 1000);
+    }
+    keepTime();
 
 // Function for resetting the game
     function reset() {
-       //reload = location.reload();
         hideMenu();
         cardArea.style.display = 'flex';
+        scoreArea.style.display = 'initial';
         randomCards();
-        reload = setBoard();
+        setBoard();
         callCount = 0;
-        time = document.getElementById('seconds');
-        setInterval(function() {time.innerHTML ++}, 1000);
+        attempts.innerHTML = callCount;
+        time.innerHTML = 0;
     }   
     
 document.getElementById('btn').addEventListener('click', reset);
