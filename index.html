@@ -14,28 +14,38 @@
 </head>
 
 <body>
-    <h1 class="heading">
+    <h1 class="heading"><a href="index.html" id="logo">
         Teddy Memory Game
-    </h1>
+    </a></h1>
 
-    <img src="assets/images/bear.png" alt="Card with bear" id="start-image">
+    <div class="card-area">
+        
+    </div>
 
-    <button id="start-game" class="new-game" onclick="window.location.href='game.html';">START GAME</button>
-    <button id="rulesBtn">RULES</button>
+    <!-- Content before game starts-->
+    <div id="menu">
+        <img src="assets/images/bear.png" alt="Card with bear" id="start-image">
 
-        <div id="rulesModal" class="modal">
+    </div>
+    <div class="score-area">
+        <p class="scores">Number of attempts: <span id="attempts">0</span></p>
+        <p class="time">Time passed: <span id="seconds">0</span></p>
+    </div>
+    <div id="rulesModal" class="modal">
 
         <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h2>Teddy Memory Game Instructions</h2>
-          <p>The aim for this game is to find matching pairs. Each turn you have two clicks, if you find a pair the cards will stay open,
-               otherwise it will turn back and you can try again. When all pairs are found you have completed the game and will be noticed
-            how many attempts you needed and how long time it took.</p>
-            <p>Have fun and good luck!</p>
-        </div>
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Teddy Memory Game Instructions</h2>
+                <p>The aim for this game is to find matching pairs. Each turn you have two clicks, if you find a pair the cards will stay open,
+                otherwise it will turn back and you can try again. When all pairs are found you have completed the game and will be noticed
+                how many attempts you needed and how long time it took.</p>
+                <p>Have fun and good luck!</p>
+            </div>
       
-      </div>
+        </div>
+    <button id="btn" class="new-game">NEW GAME</button>
+    <button id="rulesBtn" class="new-game">RULES</button>
 
     <script src="assets/js/script.js"></script>     
 </body>
