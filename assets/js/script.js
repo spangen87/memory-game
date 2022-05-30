@@ -155,6 +155,7 @@ btn.onclick = function() {
 
 // HTML Modal that shows when game is finished
 let gameFinishedModal = document.getElementById('gameFinishedModal');
+let btnRestart = document.getElementById('btnRestart')
 
 function gameFinished() {
     document.getElementById('congratulations').innerHTML = 
@@ -170,4 +171,9 @@ span.onclick = function() {
     if (event.target == gameFinishedModal) {
       gameFinishedModal.style.display = "none";
     }
-  }  
+  }
+  
+btnRestart.onclick = function() {
+    gameFinishedModal.style.display ='none';
+    reset();
+}  
