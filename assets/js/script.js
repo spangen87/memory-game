@@ -31,6 +31,7 @@ let time = 0;
 let attempts = document.getElementById('attempts');
 let reload = document.querySelector('#btn');
 let animationInProgress = false;
+let menuDiv = document.getElementById('menu');
 
 document.addEventListener('DOMContentLoaded', function() {
     cardArea.style.display = 'none';
@@ -108,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Hide menu div when game starts
     function hideMenu () {
-        let menuDiv = document.getElementById('menu');
+//        let menuDiv = document.getElementById('menu');
         menuDiv.style.display = 'none';
     }    
 
@@ -133,6 +134,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }   
     
 document.getElementById('btn').addEventListener('click', reset);
+
+// Menu button
+let toMenu = document.getElementById('toMenu');
+
+toMenu.onclick = function() {
+    cardArea.style.display = 'none';
+    scoreArea.style.display = 'none';
+    menuDiv.style.display = 'initial';
+} 
 
 // HTML Modal Credits: https://www.w3schools.com/howto/howto_css_modals.asp
 let modal = document.getElementById('rulesModal');
