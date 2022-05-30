@@ -79,7 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Counts the attempts and displays it in the HTML
         callCount++;
-     //   let attempts = document.getElementById('attempts');
         attempts.innerHTML = (callCount);
         cardsChosen = [];
         cardsId = [];
@@ -152,6 +151,4 @@ btn.onclick = function() {
       modal.style.display = "none";
     }
   }  
-    
-//});
 
