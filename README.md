@@ -1,7 +1,7 @@
 # Teddy Memory Game
 This is a Memory Game that has been inspired from my daughters stuffed animals. It is a simple but yet challenging memory game with eight pairs of cards.
 
-The game targets to be a fun and challenging way to learn to concentrate and remembering things for children. But it also a nice way for adults to relax.
+The game targets to be a fun and challenging way to learn to concentrate and remembering things for children. But it is also a nice way for adults to relax.
 
 Welcome to [Teddy Memory Game](https://spangen87.github.io/memory-game/).
 
@@ -9,7 +9,7 @@ Welcome to [Teddy Memory Game](https://spangen87.github.io/memory-game/).
 
 ## User Experience (UX)
 ### Wireframes
-The wireframes was made before the project started to guide the design. Some changes are made to the final version of the game.
+The wireframes were made before the project started to guide the design. Some changes are made to the final version of the game.
 
 ![Wireframe 1](assets/readme-images/index.jpg) ![Wireframe 2](assets/readme-images/alert.jpg)
 
@@ -18,12 +18,12 @@ The Teddy Memory Game is a one page applictaion. All buttons and actions are avi
 
 ### Design Choices
 #### Typography
-For the logo of the game, I choosed Courgette. I Wanted a classy but yet playful look so I thought Courgette was a good font for that purpose. 
+For the logo of the game, I choosed Courgette. I wanted a classy but yet playful look so I thought Courgette was a good font for that purpose. 
 
-For the rest of the text I choosed Varela Round. It is easy to read, stylish and still a litlle bit playful.
+For the rest of the text I choosed Varela Round. It is easy to read, stylish and still a little bit playful.
 
 #### Colors
-I choosed colors with my daughers favourite color in mind, pink. [Colormind](http://colormind.io/) was used to pick a palette that I used through the application.
+I choosed colors with my daughters favourite color in mind, pink. [Colormind](http://colormind.io/) was used to pick a palette that I used through the application.
 
 ![Color Palette](assets/readme-images/colors.png)
 
@@ -39,7 +39,7 @@ For the text on the buttons a had to use a darker color for readability. I used 
 ![Start page](assets/readme-images/menu.jpg)
 
 #### Rules Pop-up
-- A modal the appears as a pop-up when clicking pn the rules-button.
+- A modal that appears as a pop-up when clicking on the rules-button.
 - Explains how the game works.
 - A button to close the modal and return back to the menu.
 
@@ -73,7 +73,7 @@ For the text on the buttons a had to use a darker color for readability. I used 
 
 ## Testing
 ### Browser Testing
-- Google Chrome was used during development and there is no know issues in that browser. Although Chrome on iPhone are a little slow on the first animations.
+- Google Chrome was used during development and there is no known issues in that browser. Although Chrome on iPhone is a little slow on the first animations.
 - Mozilla Firefox is tested through the development process and there is no known issues.
 - Microsoft Edge is tested in different resolutions with no known issues.
 - Safari is only tested on mobile devices and there is no known issues in that browser.
@@ -89,9 +89,9 @@ Screens from 2560px down to 375px has been tested.
 ### Accessibility Testing
 Accessibility was tested using [Lighthouse](https://developers.google.com/web/tools/lighthouse).
 - Performance shows how the page perform in terms of loading speed.
-- Acessibility shows how accessible the page are for all users.
+- Accessibility shows how accessible the page is for all users.
 - Best Practices shows that the site uses industry standard practices.
-- SEO shows Search Engine Optimisation.
+- SEO shows Search Engine Optimization.
 
 Results for [Teddy Memory Game](https://spangen87.github.io/memory-game/) page:
 
@@ -109,7 +109,7 @@ At first, Lighthouse warned that there was not enough contrast between text and 
 The site is tested with [W3C HTML Validator](https://validator.w3.org/) for the HTML and for the CSS with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
 For the JavaScript [JSHint](https://jshint.com/) was used.
 
-Here is the results for CSS and HTML:
+Here are the results for CSS and HTML:
 
 ![W3C HTML Result](assets/readme-images/html-check.jpg)
 
@@ -127,14 +127,14 @@ Testing was also done by [Google Chrome DevTools](https://developers.google.com/
 ### Solved
 - Card animation will only work first time it is clicked. The bug was fixed by adding a remove class of the flipped cards in the function that check for pairs.
 
-- If you clicked more than two cards before they flipped back, it resulted in a error. The bug was fixed by adding a lock to the board while the timeout was running.
+- If you clicked more than two cards before they flipped back, it resulted in an error. The bug was fixed by adding a lock to the board while the timeout was running.
 
 - You could click on a card that is already facing up wich will get the count for matches to count wrong. It was also turning an already matched card to the wrong side. The issue was solved by adding a "clicklock" on all cards that was not showing the back preventing this from happening. 
 
-- The alert shown when finishing the game was not showing the time used correctly. Instead of the time it showed "[object HTMLSpanElement]". The issue was fixed by adding a element property in the JS that was forgotten.
+- The alert shown when finishing the game was not showing the time used correctly. Instead of the time it showed "[object HTMLSpanElement]". The issue was fixed by adding an element property in the JS that was forgotten.
 
 ### Left to Solve
-- There no known bugs at the moment.
+- There are no known bugs at the moment.
 
 ## Deployment
 ### To deploy the project
@@ -149,7 +149,7 @@ This site is deployed using GitHub pages. This is the steps for deploying a site
 Here is the link to the repository: [https://github.com/spangen87/memory-game](https://github.com/spangen87/memory-game)
 
 ### Forking the repository on GitHub
-A copy of the repository can be made. This copy can be viewed and changed on an other account without affecting the original repository.
+A copy of the repository can be made. This copy can be viewed and changed on another account without affecting the original repository.
 
 The steps for doing this:
 1. Make sure you are logged in on GitHub and then find the repository.
@@ -175,7 +175,7 @@ This is how you make a clone of the repository:
 ## Credits
 ### Content
 - The font is picked from [Google Fonts](https://fonts.google.com/).
-- Sulotion for randomizing the cards and setting up the array of cards [Fakorede Damilola](https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j).
+- Solution for randomizing the cards and setting up the array of cards [Fakorede Damilola](https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j).
 
 ### Media
 - All photos are taken by me, the [author](https://github.com/spangen87).
@@ -185,7 +185,7 @@ This is how you make a clone of the repository:
 ## Acknowledgements
 This game was made as Portfolio Project 2 for the Full Stack Software Developer education at [Code Institute](https://codeinstitute.net/).
 I want to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for the support and for pushing me to do better and aim higher.
-A credit to my four year old Daughter Bianca who choosed wich teddy bears that should be in the cards, and for helping me with the photagraphy.
+A credit to my four year old daughter Bianca who choosed wich teddy bears that should be in the cards, and for helping me with the photography.
 I would also like to thank my colleagus Daniel and Järker at [Best Las](https://bestlas.se/) for giving me the opportunity and time neccessary to be able to do this education.
 And lastly I would like to give a big thanks to [Ludde Hedlund](https://github.com/eddul-h) for helping me find bugs and for helping me figure out the solutions to them.
 
