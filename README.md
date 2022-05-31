@@ -3,14 +3,36 @@ This is a Memory Game that has been inspired from my daughters stuffed animals. 
 
 The game targets to be a fun and challenging way to learn concentrate and remembering things for children. But it also a nice way for adults to relax.
 
+Welcome to [Teddy Memory Game](https://spangen87.github.io/memory-game/).
+
+![Image of the application on multiple screens](assets/readme-images/responsive.jpg)
+
 ## User Experience (UX)
 ### Wireframes
 The wireframes was made before the project started to guide the design. Some changes are made to the final version of the game.
 
 ![Wireframe 1](assets/readme-images/index.jpg) ![Wireframe 2](assets/readme-images/alert.jpg)
 
+### Site Structure
+The Teddy Memory Game is a one page applictaion. All buttons and actions are avilable from the screen without the need to scroll. The start menu is a div that will be hidden when the game starts, and the game will be hidden when you enter the menu. The structure keeps the game in focus, and other elements are planned to minimalistic.
+
+### Design Choices
+#### Typography
+For the logo of the game, I choosed Courgette. I Wanted a classy but yet playful look so I thought Courgette was a good font for that purpose. 
+
+For the rest of the text I choosed Varela Round. It is easy to read, stylish and still a litlle bit playful.
+
+#### Colors
+I choosed colors with my daughers favourite color in mind, pink. [Colormind](http://colormind.io/) was used to pick a palette that I used through the application.
+
+![Color Palette](assets/readme-images/colors.png)
+
+For the text on the buttons a had to use a darker color for readability. I used a darker color of brown (#5C483D).
+
 ## Features
 ### Existing Features
+
+
 ### Future Features
 - A feature that could be added is that you can chose a nickname and that the score can be saved. That could add a competitive element to the game if you can compare scores with other users.
 - Adding more levels of difficulty.
@@ -56,6 +78,8 @@ Computer:
 
 ![Lighthouse Computer](assets/readme-images/lighthouse-computer.jpg)
 
+At first, Lighthouse warned that there was not enough contrast between text and background. So i changed a color so that it passed.
+
 ### Validator Testing
 The site is tested with [W3C HTML Validator](https://validator.w3.org/) for the HTML and for the CSS with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
 For the JavaScript [JSHint](https://jshint.com/) was used.
@@ -66,7 +90,8 @@ Here is the results for CSS and HTML:
 
 ![W3C HTML Result](assets/readme-images/css-check.jpg)
 
-The validation through JSHint showed no errors. There was some warnings for older browsers. 
+The validation through JSHint showed no errors. There was some warnings for older browsers.
+At first it showed some warnings for missing semicolons and a variable that i forgot that was unused. But that is now solved. 
 
 ## Bugs
 Card animation will only work first time it is clicked. The bug was fixed by adding a remove class of the flipped cards in the function that check for pairs.
@@ -125,9 +150,9 @@ This is how you make a clone of the repository:
 ## Acknowledgements
 This game was made as Portfolio Project 2 for the Full Stack Software Developer education at [Code Institute](https://codeinstitute.net/).
 I want to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for the support and for pushing me to do better and aim higher.
-A credit to my Daughter Bianca who choosed wich teddy bears that should be in the cards, and for helping me with the photagraphy.
+A credit to my four year old Daughter Bianca who choosed wich teddy bears that should be in the cards, and for helping me with the photagraphy.
 I would also like to thank my colleagus Daniel and Järker at [Best Las](https://bestlas.se/) for giving me the opportunity and time neccessary to be able to do this education.
-And lastly I would like to give a big thank you to [Ludde Hedlund]() for helping me find bugs and for helping me figure out the solutions to them.
+And lastly I would like to give a big thanks to [Ludde Hedlund](https://github.com/eddul-h) for helping me find bugs and for helping me figure out the solutions to them.
 
 I hope this game can bring some joy to the children and adults who will take the time to play it.
 
