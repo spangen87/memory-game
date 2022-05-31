@@ -6,21 +6,22 @@ body {
 }
 
 h1 {
-    color:#e497a6;
+    color:#5C483D;
     font-family: 'Courgette', cursive;
     font-size: 48px;
     text-align: center;
 }
 
 .new-game {
-    background-color: #e497a6;
-    color: #f8faf9;
+    background-color: #f3aeaf;
+    color: #5C483D;
     font-family: 'Varela Round', sans-serif;
     font-size: large;
     width: 150px;
     height: 50px;
     border-radius: 10px;
-    border-color: #a9c4bc;
+    border-color: #f3aeaf;
+    box-shadow: #f3aeaf;
 }
 
 .card-area {
@@ -47,7 +48,8 @@ img.turn {
 
 a { 
     text-decoration: none;
-    color: #e497a6;
+    color: #937862;
+    text-shadow: 0 0 4px #f3aeaf;
 }
 
 #menu {
