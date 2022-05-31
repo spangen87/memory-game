@@ -25,6 +25,48 @@ The wireframes was made before the project started to guide the design. Some cha
 - [Balsamiq](https://balsamiq.com/wireframes/) - was used to make the wireframes.
 
 ## Testing
+### Browser Testing
+- Google Chrome was used during development and there is no know issues in that browser. Although Chrome on iPhone are a little slow on the first animations.
+- Mozilla Firefox is tested through the development process and there is no known issues.
+- Microsoft Edge is tested in different resolutions with no known issues.
+- Safari is only tested on mobile devices and there is no known issues in that browser.
+
+### Responsiveness Test
+Tests for mobile devices was made at [Googles Mobile Friendly Test](https://search.google.com/test/mobile-friendly).
+
+![Test result](assets/readme-images/google-mobile-friendly.jpg)
+
+Manual testing has also been done through the development. That has been done on mobile devices and in [Google Chrome DevTools](https://developers.google.com/web/tools).
+Screens from 2560px down to 375px has been tested.
+
+### Accessibility Testing
+Accessibility was tested using [Lighthouse](https://developers.google.com/web/tools/lighthouse).
+- Performance shows how the page perform in terms of loading speed.
+- Acessibility shows how accessible the page are for all users.
+- Best Practices shows that the site uses industry standard practices.
+- SEO shows Search Engine Optimisation.
+
+Results for [Teddy Memory Game](https://spangen87.github.io/memory-game/) page:
+
+Mobile:
+
+![Lighthouse Mobile](assets/readme-images/lighthouse-mobile.jpg)
+
+Computer:
+
+![Lighthouse Computer](assets/readme-images/lighthouse-computer.jpg)
+
+### Validator Testing
+The site is tested with [W3C HTML Validator](https://validator.w3.org/) for the HTML and for the CSS with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
+For the JavaScript [JSHint](https://jshint.com/) was used.
+
+Here is the results for CSS and HTML:
+
+![W3C HTML Result](assets/readme-images/html-check.jpg)
+
+![W3C HTML Result](assets/readme-images/css-check.jpg)
+
+The validation through JSHint showed no errors. There was some warnings for older browsers. 
 
 ## Bugs
 Card animation will only work first time it is clicked. The bug was fixed by adding a remove class of the flipped cards in the function that check for pairs.
