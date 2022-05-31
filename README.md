@@ -111,6 +111,24 @@ This is how you make a clone of the repository:
 5. Change the working directory to where you want your cloned directory.
 6. Type `git clone` and then paste the URL that you copied.
 7. Press enter and clone has been finished.
+
 ## Credits
+### Content
+- The font is picked from [Google Fonts](https://fonts.google.com/).
+- Sulotion for randomizing the cards and setting up the array of cards [Fakorede Damilola](https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j).
+
+### Media
+- All photos are taken by me, the [author](https://github.com/spangen87).
+- Photos were compressed using [TinyPNG](https://tinypng.com/).
+- Photos are edited in [Adobe Photoshop](https://www.adobe.com/se/products/photoshop.html).
 
 ## Acknowledgements
+This game was made as Portfolio Project 2 for the Full Stack Software Developer education at [Code Institute](https://codeinstitute.net/).
+I want to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for the support and for pushing me to do better and aim higher.
+A credit to my Daughter Bianca who choosed wich teddy bears that should be in the cards, and for helping me with the photagraphy.
+I would also like to thank my colleagus Daniel and Järker at [Best Las](https://bestlas.se/) for giving me the opportunity and time neccessary to be able to do this education.
+And lastly I would like to give a big thank you to [Ludde Hedlund]() for helping me find bugs and for helping me figure out the solutions to them.
+
+I hope this game can bring some joy to the children and adults who will take the time to play it.
+
+Rikard Spångmyr, 2022
