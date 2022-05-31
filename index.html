@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Permanent+Marker&family=Varela+Round&display=swap" rel="stylesheet">
     <title>Teddy Memory Game</title>
-
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -20,15 +18,14 @@
 
     <!-- Game area-->
     <div class="card-area">
-  
+        <!-- Content from js script -->
     </div>
 
     <!-- Content before game starts-->
     <div id="menu">
         <div id="imageContainer">
             <img src="assets/images/collection.png" alt="Card with bear" id="start-image">
-        </div>
-        
+        </div>  
         <button id="rulesBtn" class="new-game">RULES</button>
     </div>
 
@@ -39,37 +36,33 @@
         <br>
         <button id="toMenu" class="new-game">MENU</button>
     </div>
+
     <!-- Modal for showing how to play-->
     <div id="rulesModal" class="modal">
-
         <!-- Modal content -->
-            <div class="modal-content">
-                <h2>Teddy Memory Game Instructions</h2>
-                <p>The aim for this game is to find matching pairs. Each turn you have two clicks, if you find a pair the cards will stay open,
-                otherwise it will turn back and you can try again. When all pairs are found you have completed the game and will be noticed
-                how many attempts you needed and how long time it took.</p>
-                <p>Have fun and good luck!</p>
-                <button id="closeBtn" class="new-game">CLOSE</button>
-            </div>
-      
+        <div class="modal-content">
+            <h2>Teddy Memory Game Instructions</h2>
+            <p>The aim for this game is to find matching pairs. Each turn you have two clicks, if you find a pair the cards will stay open,
+            otherwise it will turn back and you can try again. When all pairs are found you have completed the game and will be noticed
+            how many attempts you needed and how long time it took.</p>
+            <p>Have fun and good luck!</p>
+            <button id="closeBtn" class="new-game">CLOSE</button>
         </div>
+    </div>
+
     <!-- Modal that pops up when game is finished-->    
     <div id="gameFinishedModal" class="modal">
-
             <!-- Modal content -->
         <div class="modal-content">
             <h2>You Won!</h2>
             <p id="congratulations">
-
+                <!-- Text from js script -->
             </p>
             <button id="btnRestart" class="new-game">TRY AGAIN</button>
             <button id="btnMenu" class="new-game">MENU</button>
-        </div>
-          
+        </div>     
     </div>
-    <button id="btn" class="new-game">NEW GAME</button>
-    
-
+    <button id="btn" class="new-game">NEW GAME</button>    
     <script src="assets/js/script.js"></script>     
 </body>
 </html>
