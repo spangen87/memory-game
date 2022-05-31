@@ -147,7 +147,6 @@ toMenu.onclick = function() {
 // HTML Modal Credits: https://www.w3schools.com/howto/howto_css_modals.asp
 let modal = document.getElementById('rulesModal');
 let btn = document.getElementById('rulesBtn');
-let span = document.getElementsByClassName('close')[0];
 let close = document.getElementById('close');
 
 close.onclick = function() {
@@ -158,19 +157,10 @@ btn.onclick = function() {
     modal.style.display = "block";
   }
 
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-  
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }  
-
 // HTML Modal that shows when game is finished
 let gameFinishedModal = document.getElementById('gameFinishedModal');
-let btnRestart = document.getElementById('btnRestart')
+let btnRestart = document.getElementById('btnRestart');
+let btnMenu = document.getElementById('btnMenu');
 
 function gameFinished() {
     document.getElementById('congratulations').innerHTML = 
@@ -178,18 +168,15 @@ function gameFinished() {
     gameFinishedModal.style.display ='block';
     scoreArea.style.display = "none";
 }
-
-span.onclick = function() {
-    gameFinishedModal.style.display = "none";
-  }
-  
-  window.onclick = function(event) {
-    if (event.target == gameFinishedModal) {
-      gameFinishedModal.style.display = "none";
-    }
-  }
   
 btnRestart.onclick = function() {
     gameFinishedModal.style.display ='none';
     reset();
-}  
+}
+
+btnMenu.onclick = function() {
+    cardArea.style.display = 'none';
+    scoreArea.style.display = 'none';
+    gameFinishedModal.style.display = "none";
+    menuDiv.style.display = 'initial';
+} 
