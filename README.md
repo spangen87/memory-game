@@ -1,7 +1,7 @@
 # Teddy Memory Game
 This is a Memory Game that has been inspired from my daughters stuffed animals. It is a simple but yet challenging memory game with eight pairs of cards.
 
-The game targets to be a fun and challenging way to learn concentrate and remembering things for children. But it also a nice way for adults to relax.
+The game targets to be a fun and challenging way to learn to concentrate and remembering things for children. But it also a nice way for adults to relax.
 
 Welcome to [Teddy Memory Game](https://spangen87.github.io/memory-game/).
 
@@ -31,7 +31,32 @@ For the text on the buttons a had to use a darker color for readability. I used 
 
 ## Features
 ### Existing Features
+#### Navigation Menu
+- A start page with a logo for the game at the top.
+- In the middle there is a picture with small cards that are in the game.
+- At the bottom there is two buttons. The first for reading the rules, and the second to start the game.
 
+![Start page](assets/readme-images/menu.jpg)
+
+#### Rules Pop-up
+- A modal the appears as a pop-up when clicking pn the rules-button.
+- Explains how the game works.
+- A button to close the modal and return back to the menu.
+
+![Rules modal](assets/readme-images/rules.jpg)
+
+#### Game Area
+- The game area where all the cards are.
+- Below the cards there is a count for attempts, and how many seconds that have passed.
+- Two buttons at the bottom, the first for going back to the menu, and the second for starting an new game.
+
+![Game Area](assets/readme-images/game-area.jpg)
+
+#### Winning Message
+- When game is finished a modal pops up showing how many seconds it took, and how many attempts that was needed.
+- In the box there is two buttons, one to reset the game and try again, and one that gets you back to the menu.
+
+![Winning Message](assets/readme-images/congrats.jpg)
 
 ### Future Features
 - A feature that could be added is that you can chose a nickname and that the score can be saved. That could add a competitive element to the game if you can compare scores with other users.
@@ -91,16 +116,26 @@ Here is the results for CSS and HTML:
 ![W3C HTML Result](assets/readme-images/css-check.jpg)
 
 The validation through JSHint showed no errors. There was some warnings for older browsers.
-At first it showed some warnings for missing semicolons and a variable that i forgot that was unused. But that is now solved. 
+At first it showed some warnings for missing semicolons and a variable that i forgot that was unused. But that is now solved.
+
+### Logic Testing
+There was a lot of testing done for the logic of the game. Most was made manually by myself, and by friends and family that would try the game and find things that was not working as it supposed to do.
+
+Testing was also done by [Google Chrome DevTools](https://developers.google.com/web/tools). It was of big help when trying to find issues, especially in the JavaScript.
 
 ## Bugs
-Card animation will only work first time it is clicked. The bug was fixed by adding a remove class of the flipped cards in the function that check for pairs.
+### Solved
+- Card animation will only work first time it is clicked. The bug was fixed by adding a remove class of the flipped cards in the function that check for pairs.
 
-If you clicked more than two cards before they flipped back, it resulted in a error. The bug was fixed by adding a lock to the board while the timeout was running.
+- If you clicked more than two cards before they flipped back, it resulted in a error. The bug was fixed by adding a lock to the board while the timeout was running.
 
-You can click on a card that is already facing up wich will get the count for matches to count wrong. It will also turn an already matched card to the wrong side.
+- You could click on a card that is already facing up wich will get the count for matches to count wrong. It was also turning an already matched card to the wrong side. The issue was solved by adding a "clicklock" on all cards that was not showing the back preventing this from happening. 
 
-The alert shown when finishing the game is not showing the time used correctly. Instead of the time it shows "[object HTMLSpanElement]".
+- The alert shown when finishing the game was not showing the time used correctly. Instead of the time it showed "[object HTMLSpanElement]". The issue was fixed by adding a element property in the JS that was forgotten.
+
+### Left to Solve
+- There no known bugs at the moment.
+
 ## Deployment
 ### To deploy the project
 This site is deployed using GitHub pages. This is the steps for deploying a site.
