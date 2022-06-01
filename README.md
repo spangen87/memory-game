@@ -60,7 +60,7 @@ The wireframes were made before the project started to guide the design. Some ch
 
 [Back to top](#contents)
 ### Site Structure
-The Teddy Memory Game is a one page applictaion. All buttons and actions are avilable from the screen without the need to scroll. The start menu is a div that will be hidden when the game starts, and the game will be hidden when you enter the menu. The structure keeps the game in focus, and other elements are planned to be minimalistic.
+The Teddy Memory Game is a one page application. All buttons and actions are avilable from the screen without the need to scroll. The start menu is a div that will be hidden when the game starts, and the game will be hidden when you enter the menu. The structure keeps the game in focus, and other elements are planned to be minimalistic.
 
 [Back to top](#contents)
 ### Design Choices
@@ -75,7 +75,7 @@ I choosed colors with my daughters favourite color in mind, pink. [Colormind](ht
 
 ![Color Palette](assets/readme-images/colors.png)
 
-For the text on the buttons a had to use a darker color for readability. I used a darker color of brown (#5C483D).
+For the text on the buttons I had to use a darker color for readability. I used a darker color of brown (#5C483D).
 
 [Back to top](#contents)
 ## Features
@@ -99,7 +99,7 @@ For the text on the buttons a had to use a darker color for readability. I used 
 #### Game Area
 - The game area where all the cards are.
 - Below the cards there is a count for attempts, and how many seconds that have passed.
-- Two buttons at the bottom, the first for going back to the menu, and the second for starting an new game.
+- Two buttons at the bottom, the first for going back to the menu, and the second for starting a new game.
 
 ![Game Area](assets/readme-images/game-area.jpg)
 
