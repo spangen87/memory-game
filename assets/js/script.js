@@ -109,7 +109,9 @@ function hideMenu () {
 // Keeping time function
 function keepTime() {
     time = document.getElementById('seconds');
-    setInterval(function() {time.innerHTML ++}, 1000);
+    setInterval(function() {
+        time.innerHTML ++;
+    }, 1000);
 }
 
 keepTime();
@@ -141,9 +143,9 @@ toMenu.onclick = function() {
 // HTML Modal Credits: https://www.w3schools.com/howto/howto_css_modals.asp
 let modal = document.getElementById('rulesModal');
 let btn = document.getElementById('rulesBtn');
-let close = document.getElementById('closeBtn');
+let hideModal = document.getElementById('closeBtn');
 
-close.onclick = function() {
+hideModal.onclick = function() {
     modal.style.display = 'none';
 };
 
