@@ -9,6 +9,7 @@ Welcome to [Teddy Memory Game](https://spangen87.github.io/memory-game/).
 
 ## Contents
 - [User Experience (UX)](#user-experience-ux)
+    - [User Stories](#user-stories)
     - [Wireframes](#wireframes)
     - [Site Structure](#site-structure)
     - [Design Choices](#design-choices)
