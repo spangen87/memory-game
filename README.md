@@ -173,8 +173,10 @@ Here are the results for CSS and HTML:
 
 ![W3C HTML Result](assets/readme-images/css-check.jpg)
 
-The validation through JSHint showed no errors. There was some warnings for older browsers.
+The validation through JSHint showed no errors.
 At first it showed some warnings for missing semicolons and a variable that i forgot that was unused. But that is now solved.
+
+![JSHint](assets/readme-images/jshint.jpg)
 
 [Back to top](#contents)
 ### Logic Testing
