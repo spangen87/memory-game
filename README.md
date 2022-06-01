@@ -178,7 +178,7 @@ Testing was also done by [Google Chrome DevTools](https://developers.google.com/
 
 - If you clicked more than two cards before they flipped back, it resulted in an error. The bug was fixed by adding a lock to the board while the timeout was running.
 
-- You could click on a card that is already facing up wich will get the count for matches to count wrong. It was also turning an already matched card to the wrong side. The issue was solved by adding a "clicklock" on all cards that was not showing the back preventing this from happening. 
+- You could click on a card that is already facing up which will get the count for matches to count wrong. It was also turning an already matched card to the wrong side. The issue was solved by adding a "clicklock" on all cards that was not showing the back preventing this from happening. 
 
 - The alert shown when finishing the game was not showing the time used correctly. Instead of the time it showed "[object HTMLSpanElement]". The issue was fixed by adding an element property in the JS that was forgotten.
 
@@ -241,7 +241,7 @@ This is how you make a clone of the repository:
 ## Acknowledgements
 This game was made as Portfolio Project 2 for the Full Stack Software Developer education at [Code Institute](https://codeinstitute.net/).
 I want to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for the support and for pushing me to do better and aim higher.
-A credit to my four year old daughter Bianca who choosed wich teddy bears that should be in the cards, and for helping me with the photography.
+A credit to my four year old daughter Bianca who choosed which teddy bears that should be in the cards, and for helping me with the photography.
 I would also like to thank my colleagus Daniel and Järker at [Best Las](https://bestlas.se/) for giving me the opportunity and time neccessary to be able to do this education.
 And lastly I would like to give a big thanks to [Ludde Hedlund](https://github.com/eddul-h) for helping me find bugs and for helping me figure out the solutions to them.
 
