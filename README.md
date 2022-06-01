@@ -42,6 +42,16 @@ Welcome to [Teddy Memory Game](https://spangen87.github.io/memory-game/).
 
 
 ## User Experience (UX)
+### User Stories
+- As a user I want to get to the game istself quickly without to many clicks.
+- As a user I want to be able to undertstand how the game works in an easy way.
+- As a user I want to see the result of the game in a clear way.
+- As a user I want to be able to restart the game easily without to many cklicks.
+- As a user I want a clear design without too much clutter.
+- As a user I want colors that are matching and is easy to read.
+- As a user I want to se how I am doing while playing.
+
+[Back to top](#contents)
 ### Wireframes
 The wireframes were made before the project started to guide the design. Some changes are made to the final version of the game.
 
